@@ -32,7 +32,7 @@
 // ============================================================================
 
 //`define ENABLE_DDR3
-//`define ENABLE_HPS
+`define ENABLE_HPS
 //`define ENABLE_HSMC
 
 module Baseline_CV_SoCKit(

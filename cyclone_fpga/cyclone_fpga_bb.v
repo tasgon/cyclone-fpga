@@ -1,7 +1,6 @@
 
 module cyclone_fpga (
 	clk_clk,
-	reset_reset_n,
 	memory_mem_a,
 	memory_mem_ba,
 	memory_mem_ck,
@@ -20,7 +19,6 @@ module cyclone_fpga (
 	memory_oct_rzqin);	
 
 	input		clk_clk;
-	input		reset_reset_n;
 	output	[12:0]	memory_mem_a;
 	output	[2:0]	memory_mem_ba;
 	output		memory_mem_ck;
