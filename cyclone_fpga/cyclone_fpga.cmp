@@ -1,6 +1,7 @@
 	component cyclone_fpga is
 		port (
 			clk_clk            : in    std_logic                     := 'X';             -- clk
+			led_test_readdata  : out   std_logic_vector(3 downto 0);                     -- readdata
 			memory_mem_a       : out   std_logic_vector(12 downto 0);                    -- mem_a
 			memory_mem_ba      : out   std_logic_vector(2 downto 0);                     -- mem_ba
 			memory_mem_ck      : out   std_logic;                                        -- mem_ck
@@ -16,7 +17,8 @@
 			memory_mem_dqs_n   : inout std_logic                     := 'X';             -- mem_dqs_n
 			memory_mem_odt     : out   std_logic;                                        -- mem_odt
 			memory_mem_dm      : out   std_logic;                                        -- mem_dm
-			memory_oct_rzqin   : in    std_logic                     := 'X'              -- oct_rzqin
+			memory_oct_rzqin   : in    std_logic                     := 'X';             -- oct_rzqin
+			reset_reset_n      : in    std_logic                     := 'X'              -- reset_n
 		);
 	end component cyclone_fpga;
 

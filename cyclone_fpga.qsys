@@ -17,6 +17,14 @@
          type = "int";
       }
    }
+   element cyclone_fpga
+   {
+      datum _originalDeviceFamily
+      {
+         value = "Cyclone V";
+         type = "String";
+      }
+   }
    element hps_0
    {
       datum _sortIndex
@@ -55,14 +63,20 @@
  <parameter name="useTestBenchNamingPattern" value="false" />
  <instanceScript></instanceScript>
  <interface name="clk" internal="clk_0.clk_in" type="clock" dir="end" />
+ <interface
+   name="led_test"
+   internal="led_test_0.conduit_end"
+   type="conduit"
+   dir="end" />
  <interface name="memory" internal="hps_0.memory" type="conduit" dir="end" />
- <module name="clk_0" kind="clock_source" version="16.1" enabled="1">
+ <interface name="reset" internal="clk_0.clk_in_reset" type="reset" dir="end" />
+ <module name="clk_0" kind="clock_source" version="17.0" enabled="1">
   <parameter name="clockFrequency" value="50000000" />
   <parameter name="clockFrequencyKnown" value="true" />
   <parameter name="inputClockFrequency" value="0" />
   <parameter name="resetSynchronousEdges" value="NONE" />
  </module>
- <module name="hps_0" kind="altera_hps" version="16.1" enabled="1">
+ <module name="hps_0" kind="altera_hps" version="17.0" enabled="1">
   <parameter name="ABSTRACT_REAL_COMPARE_TEST" value="false" />
   <parameter name="ABS_RAM_MEM_INIT_FILENAME" value="meminit" />
   <parameter name="ACV_PHY_CLK_ADD_FR_PHASE" value="0.0" />
@@ -595,23 +609,29 @@
  <module name="led_test_0" kind="led_test" version="1.0" enabled="1" />
  <connection
    kind="avalon"
-   version="16.1"
+   version="17.0"
    start="hps_0.h2f_lw_axi_master"
    end="led_test_0.avalon_slave_0">
   <parameter name="arbitrationPriority" value="1" />
   <parameter name="baseAddress" value="0x0000" />
   <parameter name="defaultConnection" value="false" />
  </connection>
+ <connection kind="clock" version="17.0" start="clk_0.clk" end="led_test_0.clock" />
  <connection
    kind="clock"
-   version="16.1"
+   version="17.0"
    start="clk_0.clk"
    end="hps_0.h2f_lw_axi_clock" />
  <connection
    kind="reset"
-   version="16.1"
+   version="17.0"
+   start="clk_0.clk_reset"
+   end="led_test_0.reset" />
+ <connection
+   kind="reset"
+   version="17.0"
    start="hps_0.h2f_reset"
-   end="clk_0.clk_in_reset" />
+   end="led_test_0.reset" />
  <interconnectRequirement for="$system" name="qsys_mm.clockCrossingAdapter" value="HANDSHAKE" />
  <interconnectRequirement for="$system" name="qsys_mm.enableEccProtection" value="FALSE" />
  <interconnectRequirement for="$system" name="qsys_mm.insertDefaultSlave" value="FALSE" />
