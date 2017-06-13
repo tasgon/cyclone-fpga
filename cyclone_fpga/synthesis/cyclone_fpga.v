@@ -5,7 +5,7 @@
 `timescale 1 ps / 1 ps
 module cyclone_fpga (
 		input  wire        clk_clk,            //      clk.clk
-		output wire [3:0]  led_test_readdata,  // led_test.readdata
+		output wire [3:0]  led_test_led,       // led_test.led
 		output wire [12:0] memory_mem_a,       //   memory.mem_a
 		output wire [2:0]  memory_mem_ba,      //         .mem_ba
 		output wire        memory_mem_ck,      //         .mem_ck
@@ -132,7 +132,7 @@ module cyclone_fpga (
 		.writedata (mm_interconnect_0_led_test_0_avalon_slave_0_writedata), //               .writedata
 		.clk       (clk_clk),                                               //          clock.clk
 		.reset     (rst_controller_reset_out_reset),                        //          reset.reset
-		.led       (led_test_readdata)                                      //    conduit_end.readdata
+		.led       (led_test_led)                                           //    conduit_end.led
 	);
 
 	cyclone_fpga_mm_interconnect_0 mm_interconnect_0 (

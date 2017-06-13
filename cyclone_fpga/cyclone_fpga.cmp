@@ -1,7 +1,7 @@
 	component cyclone_fpga is
 		port (
 			clk_clk            : in    std_logic                     := 'X';             -- clk
-			led_test_readdata  : out   std_logic_vector(3 downto 0);                     -- readdata
+			led_test_led       : out   std_logic_vector(3 downto 0);                     -- led
 			memory_mem_a       : out   std_logic_vector(12 downto 0);                    -- mem_a
 			memory_mem_ba      : out   std_logic_vector(2 downto 0);                     -- mem_ba
 			memory_mem_ck      : out   std_logic;                                        -- mem_ck

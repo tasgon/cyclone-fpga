@@ -1,11 +1,11 @@
-Analysis & Synthesis Status : Successful - Sun Jun 04 15:47:02 2017
+Analysis & Synthesis Status : Successful - Mon Jun 12 22:25:00 2017
 Quartus Prime Version : 17.0.0 Build 595 04/25/2017 SJ Lite Edition
 Revision Name : Cyclone_FPGA
 Top-level Entity Name : Baseline_CV_SoCKit
 Family : Cyclone V
 Logic utilization (in ALMs) : N/A
-Total registers : 0
-Total pins : 108
+Total registers : 264
+Total pins : 123
 Total virtual pins : 0
 Total block memory bits : 0
 Total DSP Blocks : 0
@@ -14,4 +14,4 @@ Total HSSI PMA RX Deserializers : 0
 Total HSSI TX PCSs : 0
 Total HSSI PMA TX Serializers : 0
 Total PLLs : 0
-Total DLLs : 0
+Total DLLs : 1

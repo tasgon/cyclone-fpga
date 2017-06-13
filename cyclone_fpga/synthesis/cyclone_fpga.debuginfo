@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <EnsembleReport name="cyclone_fpga" kind="system" version="17.0" fabric="QSYS">
  <!-- Format version 17.0 595 (Future versions may contain additional information.) -->
- <!-- 2017.05.18.15:36:53 -->
+ <!-- 2017.06.06.22:14:43 -->
  <!-- A collection of modules and connections -->
  <parameter name="clockCrossingAdapter">
   <type>com.altera.sopcmodel.ensemble.EClockAdapter</type>
@@ -53,7 +53,7 @@
  </parameter>
  <parameter name="generationId">
   <type>int</type>
-  <value>1495136171</value>
+  <value>1496801657</value>
   <derived>false</derived>
   <enabled>true</enabled>
   <visible>true</visible>
@@ -40169,7 +40169,7 @@ parameters are a RESULT of the module parameters. -->
     <name>led</name>
     <direction>Output</direction>
     <width>4</width>
-    <role>readdata</role>
+    <role>led</role>
    </port>
   </interface>
  </module>
@@ -42397,5 +42397,5 @@ parameters are a RESULT of the module parameters. -->
   <version>17.0</version>
  </plugin>
  <reportVersion>17.0 595</reportVersion>
- <uniqueIdentifier>00000000000000E00000015C1D0F8C27</uniqueIdentifier>
+ <uniqueIdentifier>1C872C7447DB0000015C8054D6CF</uniqueIdentifier>
 </EnsembleReport>

@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <EnsembleReport name="cyclone_fpga" kind="cyclone_fpga" version="1.0" fabric="QSYS">
  <!-- Format version 17.0 595 (Future versions may contain additional information.) -->
- <!-- 2017.05.18.15:36:12 -->
+ <!-- 2017.06.06.22:14:18 -->
  <!-- A collection of modules and connections -->
  <parameter name="AUTO_GENERATION_ID">
   <type>java.lang.Integer</type>
-  <value>1495136171</value>
+  <value>1496801657</value>
   <derived>false</derived>
   <enabled>true</enabled>
   <visible>false</visible>
@@ -71216,7 +71216,7 @@ parameters are a RESULT of the module parameters. -->
     <name>led</name>
     <direction>Output</direction>
     <width>4</width>
-    <role>readdata</role>
+    <role>led</role>
    </port>
   </interface>
  </module>

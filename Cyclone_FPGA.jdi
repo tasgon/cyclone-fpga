@@ -1,0 +1,16 @@
+<sld_project_info>
+  <project>
+    <hash md5_digest_80b="4481885e628e95bc1cfe"/>
+  </project>
+  <file_info>
+    <file device="5CSXFC6D6F31C6" path="Cyclone_FPGA.sof" usercode="0xFFFFFFFF"/>
+  </file_info>
+  <sld_infos>
+    <sld_info hpath="cyclone_fpga:bridge" name="bridge">
+      <assignment_values>
+        <assignment_value text="QSYS_NAME cyclone_fpga HAS_SOPCINFO 1 GENERATION_ID 1496801657"/>
+      </assignment_values>
+      <parameters/>
+    </sld_info>
+  </sld_infos>
+</sld_project_info>

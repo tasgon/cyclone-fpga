@@ -1,5 +1,5 @@
 Flow report for Cyclone_FPGA
-Sun Jun 04 15:47:08 2017
+Mon Jun 12 22:26:29 2017
 Quartus Prime Version 17.0.0 Build 595 04/25/2017 SJ Lite Edition
 
 
@@ -41,16 +41,16 @@ agreement for further details.
 +-------------------------------------------------------------------------------+
 ; Flow Summary                                                                  ;
 +---------------------------------+---------------------------------------------+
-; Flow Status                     ; Flow Failed - Sun Jun 04 15:47:08 2017      ;
+; Flow Status                     ; Successful - Mon Jun 12 22:26:07 2017       ;
 ; Quartus Prime Version           ; 17.0.0 Build 595 04/25/2017 SJ Lite Edition ;
 ; Revision Name                   ; Cyclone_FPGA                                ;
 ; Top-level Entity Name           ; Baseline_CV_SoCKit                          ;
 ; Family                          ; Cyclone V                                   ;
 ; Device                          ; 5CSXFC6D6F31C6                              ;
 ; Timing Models                   ; Final                                       ;
-; Logic utilization (in ALMs)     ; 1 / 41,910 ( < 1 % )                        ;
-; Total registers                 ; 0                                           ;
-; Total pins                      ; 108 / 499 ( 22 % )                          ;
+; Logic utilization (in ALMs)     ; 190 / 41,910 ( < 1 % )                      ;
+; Total registers                 ; 271                                         ;
+; Total pins                      ; 123 / 499 ( 25 % )                          ;
 ; Total virtual pins              ; 0                                           ;
 ; Total block memory bits         ; 0 / 5,662,720 ( 0 % )                       ;
 ; Total DSP Blocks                ; 0 / 112 ( 0 % )                             ;
@@ -59,7 +59,7 @@ agreement for further details.
 ; Total HSSI TX PCSs              ; 0 / 9 ( 0 % )                               ;
 ; Total HSSI PMA TX Serializers   ; 0 / 9 ( 0 % )                               ;
 ; Total PLLs                      ; 0 / 15 ( 0 % )                              ;
-; Total DLLs                      ; 0 / 4 ( 0 % )                               ;
+; Total DLLs                      ; 1 / 4 ( 25 % )                              ;
 +---------------------------------+---------------------------------------------+
 
 
@@ -68,84 +68,90 @@ agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 06/04/2017 15:44:01 ;
+; Start date & time ; 06/12/2017 22:22:23 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; Cyclone_FPGA        ;
 +-------------------+---------------------+
 
 
-+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Flow Non-Default Global Settings                                                                                                                                                 ;
-+-------------------------------------+----------------------------------------------------------------------------+---------------+----------------------------------+------------+
-; Assignment Name                     ; Value                                                                      ; Default Value ; Entity Name                      ; Section Id ;
-+-------------------------------------+----------------------------------------------------------------------------+---------------+----------------------------------+------------+
-; COMPILER_SIGNATURE_ID               ; 277375803568317.149660544102200                                            ; --            ; --                               ; --         ;
-; HPS_ISW_FILE                        ; cyclone_fpga/synthesis/submodules/sequencer/alt_types.pre.h                ; --            ; cyclone_fpga_hps_0_hps_io_border ; --         ;
-; HPS_ISW_FILE                        ; cyclone_fpga/synthesis/submodules/sequencer/emif.pre.xml                   ; --            ; cyclone_fpga_hps_0_hps_io_border ; --         ;
-; HPS_ISW_FILE                        ; cyclone_fpga/synthesis/submodules/sequencer/sdram_io.pre.h                 ; --            ; cyclone_fpga_hps_0_hps_io_border ; --         ;
-; HPS_ISW_FILE                        ; cyclone_fpga/synthesis/submodules/sequencer/sequencer.pre.c                ; --            ; cyclone_fpga_hps_0_hps_io_border ; --         ;
-; HPS_ISW_FILE                        ; cyclone_fpga/synthesis/submodules/sequencer/sequencer.pre.h                ; --            ; cyclone_fpga_hps_0_hps_io_border ; --         ;
-; HPS_ISW_FILE                        ; cyclone_fpga/synthesis/submodules/sequencer/sequencer_auto.pre.h           ; --            ; cyclone_fpga_hps_0_hps_io_border ; --         ;
-; HPS_ISW_FILE                        ; cyclone_fpga/synthesis/submodules/sequencer/sequencer_auto_ac_init.pre.c   ; --            ; cyclone_fpga_hps_0_hps_io_border ; --         ;
-; HPS_ISW_FILE                        ; cyclone_fpga/synthesis/submodules/sequencer/sequencer_auto_inst_init.pre.c ; --            ; cyclone_fpga_hps_0_hps_io_border ; --         ;
-; HPS_ISW_FILE                        ; cyclone_fpga/synthesis/submodules/sequencer/sequencer_defines.pre.h        ; --            ; cyclone_fpga_hps_0_hps_io_border ; --         ;
-; HPS_ISW_FILE                        ; cyclone_fpga/synthesis/submodules/sequencer/system.pre.h                   ; --            ; cyclone_fpga_hps_0_hps_io_border ; --         ;
-; HPS_ISW_FILE                        ; cyclone_fpga/synthesis/submodules/sequencer/tclrpt.pre.c                   ; --            ; cyclone_fpga_hps_0_hps_io_border ; --         ;
-; HPS_ISW_FILE                        ; cyclone_fpga/synthesis/submodules/sequencer/tclrpt.pre.h                   ; --            ; cyclone_fpga_hps_0_hps_io_border ; --         ;
-; HPS_ISW_FILE                        ; cyclone_fpga/synthesis/submodules/hps.pre.xml                              ; --            ; cyclone_fpga_hps_0_hps_io_border ; --         ;
-; HPS_PARTITION                       ; On                                                                         ; --            ; cyclone_fpga_hps_0_hps_io_border ; --         ;
-; MAX_CORE_JUNCTION_TEMP              ; 85                                                                         ; --            ; --                               ; --         ;
-; MIN_CORE_JUNCTION_TEMP              ; 0                                                                          ; --            ; --                               ; --         ;
-; MISC_FILE                           ; cyclone_fpga/synthesis/../cyclone_fpga.cmp                                 ; --            ; --                               ; --         ;
-; MISC_FILE                           ; cyclone_fpga/synthesis/../../C                                             ; --            ; --                               ; --         ;
-; MISC_FILE                           ; cyclone_fpga/synthesis/cyclone_fpga_hps_0_hps.svd                          ; --            ; --                               ; --         ;
-; MISC_FILE                           ; cyclone_fpga/synthesis/../../cyclone_fpga.qsys                             ; --            ; --                               ; --         ;
-; MISC_FILE                           ; cyclone_fpga/synthesis/submodules/sequencer/alt_types.pre.h                ; --            ; --                               ; --         ;
-; MISC_FILE                           ; cyclone_fpga/synthesis/submodules/sequencer/emif.pre.xml                   ; --            ; --                               ; --         ;
-; MISC_FILE                           ; cyclone_fpga/synthesis/submodules/sequencer/sdram_io.pre.h                 ; --            ; --                               ; --         ;
-; MISC_FILE                           ; cyclone_fpga/synthesis/submodules/sequencer/sequencer.pre.c                ; --            ; --                               ; --         ;
-; MISC_FILE                           ; cyclone_fpga/synthesis/submodules/sequencer/sequencer.pre.h                ; --            ; --                               ; --         ;
-; MISC_FILE                           ; cyclone_fpga/synthesis/submodules/sequencer/sequencer_auto.pre.h           ; --            ; --                               ; --         ;
-; MISC_FILE                           ; cyclone_fpga/synthesis/submodules/sequencer/sequencer_auto_ac_init.pre.c   ; --            ; --                               ; --         ;
-; MISC_FILE                           ; cyclone_fpga/synthesis/submodules/sequencer/sequencer_auto_inst_init.pre.c ; --            ; --                               ; --         ;
-; MISC_FILE                           ; cyclone_fpga/synthesis/submodules/sequencer/sequencer_defines.pre.h        ; --            ; --                               ; --         ;
-; MISC_FILE                           ; cyclone_fpga/synthesis/submodules/sequencer/system.pre.h                   ; --            ; --                               ; --         ;
-; MISC_FILE                           ; cyclone_fpga/synthesis/submodules/sequencer/tclrpt.pre.c                   ; --            ; --                               ; --         ;
-; MISC_FILE                           ; cyclone_fpga/synthesis/submodules/sequencer/tclrpt.pre.h                   ; --            ; --                               ; --         ;
-; MISC_FILE                           ; cyclone_fpga/synthesis/submodules/hps.pre.xml                              ; --            ; --                               ; --         ;
-; PARTITION_COLOR                     ; -- (Not supported for targeted family)                                     ; --            ; Baseline_CV_SoCKit               ; Top        ;
-; PARTITION_FITTER_PRESERVATION_LEVEL ; -- (Not supported for targeted family)                                     ; --            ; Baseline_CV_SoCKit               ; Top        ;
-; PARTITION_NETLIST_TYPE              ; -- (Not supported for targeted family)                                     ; --            ; Baseline_CV_SoCKit               ; Top        ;
-; POWER_BOARD_THERMAL_MODEL           ; None (CONSERVATIVE)                                                        ; --            ; --                               ; --         ;
-; POWER_PRESET_COOLING_SOLUTION       ; 23 MM HEAT SINK WITH 200 LFPM AIRFLOW                                      ; --            ; --                               ; --         ;
-; SLD_FILE                            ; cyclone_fpga/synthesis/cyclone_fpga.regmap                                 ; --            ; --                               ; --         ;
-; SLD_FILE                            ; cyclone_fpga/synthesis/cyclone_fpga.debuginfo                              ; --            ; --                               ; --         ;
-; SLD_INFO                            ; QSYS_NAME cyclone_fpga HAS_SOPCINFO 1 GENERATION_ID 1495136171             ; --            ; cyclone_fpga                     ; --         ;
-; SOPCINFO_FILE                       ; cyclone_fpga/synthesis/../../cyclone_fpga.sopcinfo                         ; --            ; --                               ; --         ;
-; SYNTHESIS_ONLY_QIP                  ; On                                                                         ; --            ; --                               ; --         ;
-; TOP_LEVEL_ENTITY                    ; Baseline_CV_SoCKit                                                         ; Cyclone_FPGA  ; --                               ; --         ;
-+-------------------------------------+----------------------------------------------------------------------------+---------------+----------------------------------+------------+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Flow Non-Default Global Settings                                                                                                                                                   ;
++---------------------------------------+----------------------------------------------------------------------------+---------------+----------------------------------+------------+
+; Assignment Name                       ; Value                                                                      ; Default Value ; Entity Name                      ; Section Id ;
++---------------------------------------+----------------------------------------------------------------------------+---------------+----------------------------------+------------+
+; COMPILER_SIGNATURE_ID                 ; 31366891980763.149732053906336                                             ; --            ; --                               ; --         ;
+; ECO_REGENERATE_REPORT                 ; On                                                                         ; Off           ; --                               ; --         ;
+; HPS_ISW_FILE                          ; cyclone_fpga/synthesis/submodules/sequencer/alt_types.pre.h                ; --            ; cyclone_fpga_hps_0_hps_io_border ; --         ;
+; HPS_ISW_FILE                          ; cyclone_fpga/synthesis/submodules/sequencer/emif.pre.xml                   ; --            ; cyclone_fpga_hps_0_hps_io_border ; --         ;
+; HPS_ISW_FILE                          ; cyclone_fpga/synthesis/submodules/sequencer/sdram_io.pre.h                 ; --            ; cyclone_fpga_hps_0_hps_io_border ; --         ;
+; HPS_ISW_FILE                          ; cyclone_fpga/synthesis/submodules/sequencer/sequencer.pre.c                ; --            ; cyclone_fpga_hps_0_hps_io_border ; --         ;
+; HPS_ISW_FILE                          ; cyclone_fpga/synthesis/submodules/sequencer/sequencer.pre.h                ; --            ; cyclone_fpga_hps_0_hps_io_border ; --         ;
+; HPS_ISW_FILE                          ; cyclone_fpga/synthesis/submodules/sequencer/sequencer_auto.pre.h           ; --            ; cyclone_fpga_hps_0_hps_io_border ; --         ;
+; HPS_ISW_FILE                          ; cyclone_fpga/synthesis/submodules/sequencer/sequencer_auto_ac_init.pre.c   ; --            ; cyclone_fpga_hps_0_hps_io_border ; --         ;
+; HPS_ISW_FILE                          ; cyclone_fpga/synthesis/submodules/sequencer/sequencer_auto_inst_init.pre.c ; --            ; cyclone_fpga_hps_0_hps_io_border ; --         ;
+; HPS_ISW_FILE                          ; cyclone_fpga/synthesis/submodules/sequencer/sequencer_defines.pre.h        ; --            ; cyclone_fpga_hps_0_hps_io_border ; --         ;
+; HPS_ISW_FILE                          ; cyclone_fpga/synthesis/submodules/sequencer/system.pre.h                   ; --            ; cyclone_fpga_hps_0_hps_io_border ; --         ;
+; HPS_ISW_FILE                          ; cyclone_fpga/synthesis/submodules/sequencer/tclrpt.pre.c                   ; --            ; cyclone_fpga_hps_0_hps_io_border ; --         ;
+; HPS_ISW_FILE                          ; cyclone_fpga/synthesis/submodules/sequencer/tclrpt.pre.h                   ; --            ; cyclone_fpga_hps_0_hps_io_border ; --         ;
+; HPS_ISW_FILE                          ; cyclone_fpga/synthesis/submodules/hps.pre.xml                              ; --            ; cyclone_fpga_hps_0_hps_io_border ; --         ;
+; HPS_PARTITION                         ; On                                                                         ; --            ; cyclone_fpga_hps_0_hps_io_border ; --         ;
+; MAX_CORE_JUNCTION_TEMP                ; 85                                                                         ; --            ; --                               ; --         ;
+; MIN_CORE_JUNCTION_TEMP                ; 0                                                                          ; --            ; --                               ; --         ;
+; MISC_FILE                             ; cyclone_fpga/synthesis/../cyclone_fpga.cmp                                 ; --            ; --                               ; --         ;
+; MISC_FILE                             ; cyclone_fpga/synthesis/../../C                                             ; --            ; --                               ; --         ;
+; MISC_FILE                             ; cyclone_fpga/synthesis/cyclone_fpga_hps_0_hps.svd                          ; --            ; --                               ; --         ;
+; MISC_FILE                             ; cyclone_fpga/synthesis/../../cyclone_fpga.qsys                             ; --            ; --                               ; --         ;
+; MISC_FILE                             ; cyclone_fpga/synthesis/submodules/sequencer/alt_types.pre.h                ; --            ; --                               ; --         ;
+; MISC_FILE                             ; cyclone_fpga/synthesis/submodules/sequencer/emif.pre.xml                   ; --            ; --                               ; --         ;
+; MISC_FILE                             ; cyclone_fpga/synthesis/submodules/sequencer/sdram_io.pre.h                 ; --            ; --                               ; --         ;
+; MISC_FILE                             ; cyclone_fpga/synthesis/submodules/sequencer/sequencer.pre.c                ; --            ; --                               ; --         ;
+; MISC_FILE                             ; cyclone_fpga/synthesis/submodules/sequencer/sequencer.pre.h                ; --            ; --                               ; --         ;
+; MISC_FILE                             ; cyclone_fpga/synthesis/submodules/sequencer/sequencer_auto.pre.h           ; --            ; --                               ; --         ;
+; MISC_FILE                             ; cyclone_fpga/synthesis/submodules/sequencer/sequencer_auto_ac_init.pre.c   ; --            ; --                               ; --         ;
+; MISC_FILE                             ; cyclone_fpga/synthesis/submodules/sequencer/sequencer_auto_inst_init.pre.c ; --            ; --                               ; --         ;
+; MISC_FILE                             ; cyclone_fpga/synthesis/submodules/sequencer/sequencer_defines.pre.h        ; --            ; --                               ; --         ;
+; MISC_FILE                             ; cyclone_fpga/synthesis/submodules/sequencer/system.pre.h                   ; --            ; --                               ; --         ;
+; MISC_FILE                             ; cyclone_fpga/synthesis/submodules/sequencer/tclrpt.pre.c                   ; --            ; --                               ; --         ;
+; MISC_FILE                             ; cyclone_fpga/synthesis/submodules/sequencer/tclrpt.pre.h                   ; --            ; --                               ; --         ;
+; MISC_FILE                             ; cyclone_fpga/synthesis/submodules/hps.pre.xml                              ; --            ; --                               ; --         ;
+; PARTITION_COLOR                       ; -- (Not supported for targeted family)                                     ; --            ; Baseline_CV_SoCKit               ; Top        ;
+; PARTITION_FITTER_PRESERVATION_LEVEL   ; -- (Not supported for targeted family)                                     ; --            ; Baseline_CV_SoCKit               ; Top        ;
+; PARTITION_NETLIST_TYPE                ; -- (Not supported for targeted family)                                     ; --            ; Baseline_CV_SoCKit               ; Top        ;
+; POWER_BOARD_THERMAL_MODEL             ; None (CONSERVATIVE)                                                        ; --            ; --                               ; --         ;
+; POWER_PRESET_COOLING_SOLUTION         ; 23 MM HEAT SINK WITH 200 LFPM AIRFLOW                                      ; --            ; --                               ; --         ;
+; SLD_FILE                              ; cyclone_fpga/synthesis/cyclone_fpga.regmap                                 ; --            ; --                               ; --         ;
+; SLD_FILE                              ; cyclone_fpga/synthesis/cyclone_fpga.debuginfo                              ; --            ; --                               ; --         ;
+; SLD_INFO                              ; QSYS_NAME cyclone_fpga HAS_SOPCINFO 1 GENERATION_ID 1496801657             ; --            ; cyclone_fpga                     ; --         ;
+; SOPCINFO_FILE                         ; cyclone_fpga/synthesis/../../cyclone_fpga.sopcinfo                         ; --            ; --                               ; --         ;
+; SYNTHESIS_ONLY_QIP                    ; On                                                                         ; --            ; --                               ; --         ;
+; TOP_LEVEL_ENTITY                      ; Baseline_CV_SoCKit                                                         ; Cyclone_FPGA  ; --                               ; --         ;
+; USE_DLL_FREQUENCY_FOR_DQS_DELAY_CHAIN ; On                                                                         ; Off           ; --                               ; --         ;
++---------------------------------------+----------------------------------------------------------------------------+---------------+----------------------------------+------------+
 
 
-+--------------------------------------------------------------------------------------------------------------------------+
-; Flow Elapsed Time                                                                                                        ;
-+----------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
-+----------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis ; 00:00:16     ; 1.0                     ; 705 MB              ; 00:00:31                           ;
-; Fitter               ; 00:00:05     ; 1.0                     ; 981 MB              ; 00:00:04                           ;
-; Total                ; 00:00:21     ; --                      ; --                  ; 00:00:35                           ;
-+----------------------+--------------+-------------------------+---------------------+------------------------------------+
++-------------------------------------------------------------------------------------------------------------------------------+
+; Flow Elapsed Time                                                                                                             ;
++---------------------------+--------------+-------------------------+---------------------+------------------------------------+
+; Module Name               ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
++---------------------------+--------------+-------------------------+---------------------+------------------------------------+
+; Analysis & Synthesis      ; 00:00:17     ; 1.0                     ; 834 MB              ; 00:00:26                           ;
+; Fitter                    ; 00:00:55     ; 1.0                     ; 3211 MB             ; 00:01:27                           ;
+; Assembler                 ; 00:00:09     ; 1.0                     ; 749 MB              ; 00:00:09                           ;
+; TimeQuest Timing Analyzer ; 00:00:21     ; 1.0                     ; 1422 MB             ; 00:00:21                           ;
+; Total                     ; 00:01:42     ; --                      ; --                  ; 00:02:23                           ;
++---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
-+------------------------------------------------------------------------------------+
-; Flow OS Summary                                                                    ;
-+----------------------+------------------+------------+------------+----------------+
-; Module Name          ; Machine Hostname ; OS Name    ; OS Version ; Processor type ;
-+----------------------+------------------+------------+------------+----------------+
-; Analysis & Synthesis ; FLEX-LP2         ; Windows 10 ; 10.0       ; x86_64         ;
-; Fitter               ; FLEX-LP2         ; Windows 10 ; 10.0       ; x86_64         ;
-+----------------------+------------------+------------+------------+----------------+
++-----------------------------------------------------------------------------------------+
+; Flow OS Summary                                                                         ;
++---------------------------+------------------+------------+------------+----------------+
+; Module Name               ; Machine Hostname ; OS Name    ; OS Version ; Processor type ;
++---------------------------+------------------+------------+------------+----------------+
+; Analysis & Synthesis      ; GMPC             ; Windows 10 ; 10.0       ; x86_64         ;
+; Fitter                    ; GMPC             ; Windows 10 ; 10.0       ; x86_64         ;
+; Assembler                 ; GMPC             ; Windows 10 ; 10.0       ; x86_64         ;
+; TimeQuest Timing Analyzer ; GMPC             ; Windows 10 ; 10.0       ; x86_64         ;
++---------------------------+------------------+------------+------------+----------------+
 
 
 ------------
@@ -153,6 +159,8 @@ agreement for further details.
 ------------
 quartus_map --read_settings_files=on --write_settings_files=off Cyclone_FPGA -c Cyclone_FPGA
 quartus_fit --read_settings_files=off --write_settings_files=off Cyclone_FPGA -c Cyclone_FPGA
+quartus_asm --read_settings_files=off --write_settings_files=off Cyclone_FPGA -c Cyclone_FPGA
+quartus_sta Cyclone_FPGA -c Cyclone_FPGA
 
 
 

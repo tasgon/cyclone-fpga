@@ -1,6 +1,6 @@
 Info: Starting: Create block symbol file (.bsf)
-Info: qsys-generate C:\Users\myself\Code\FPGA\cyclone-fpga\cyclone_fpga.qsys --block-symbol-file --output-directory=C:\Users\myself\Code\FPGA\cyclone-fpga\cyclone_fpga --family="Cyclone V" --part=5CSXFC6D6F31C6
-Progress: Loading cyclone-fpga/cyclone_fpga.qsys
+Info: qsys-generate C:\Users\myself\Code\FPGA\Cyclone_FPGA\cyclone_fpga.qsys --block-symbol-file --output-directory=C:\Users\myself\Code\FPGA\Cyclone_FPGA\cyclone_fpga --family="Cyclone V" --part=5CSXFC6D6F31C6
+Progress: Loading Cyclone_FPGA/cyclone_fpga.qsys
 Progress: Reading input file
 Progress: Adding clk_0 [clock_source 17.0]
 Progress: Parameterizing module clk_0
@@ -21,8 +21,8 @@ Info: qsys-generate succeeded.
 Info: Finished: Create block symbol file (.bsf)
 Info: 
 Info: Starting: Create HDL design files for synthesis
-Info: qsys-generate C:\Users\myself\Code\FPGA\cyclone-fpga\cyclone_fpga.qsys --synthesis=VERILOG --output-directory=C:\Users\myself\Code\FPGA\cyclone-fpga\cyclone_fpga\synthesis --family="Cyclone V" --part=5CSXFC6D6F31C6
-Progress: Loading cyclone-fpga/cyclone_fpga.qsys
+Info: qsys-generate C:\Users\myself\Code\FPGA\Cyclone_FPGA\cyclone_fpga.qsys --synthesis=VERILOG --output-directory=C:\Users\myself\Code\FPGA\Cyclone_FPGA\cyclone_fpga\synthesis --family="Cyclone V" --part=5CSXFC6D6F31C6
+Progress: Loading Cyclone_FPGA/cyclone_fpga.qsys
 Progress: Reading input file
 Progress: Adding clk_0 [clock_source 17.0]
 Progress: Parameterizing module clk_0
@@ -61,15 +61,15 @@ Info: led_test_0_avalon_slave_0_agent_rsp_fifo: "mm_interconnect_0" instantiated
 Info: router: "mm_interconnect_0" instantiated altera_merlin_router "router"
 Info: router_002: "mm_interconnect_0" instantiated altera_merlin_router "router_002"
 Info: led_test_0_avalon_slave_0_burst_adapter: "mm_interconnect_0" instantiated altera_merlin_burst_adapter "led_test_0_avalon_slave_0_burst_adapter"
-Info: Reusing file C:/Users/myself/Code/FPGA/cyclone-fpga/cyclone_fpga/synthesis/submodules/altera_merlin_address_alignment.sv
+Info: Reusing file C:/Users/myself/Code/FPGA/Cyclone_FPGA/cyclone_fpga/synthesis/submodules/altera_merlin_address_alignment.sv
 Info: cmd_demux: "mm_interconnect_0" instantiated altera_merlin_demultiplexer "cmd_demux"
 Info: cmd_mux: "mm_interconnect_0" instantiated altera_merlin_multiplexer "cmd_mux"
 Info: rsp_demux: "mm_interconnect_0" instantiated altera_merlin_demultiplexer "rsp_demux"
 Info: rsp_mux: "mm_interconnect_0" instantiated altera_merlin_multiplexer "rsp_mux"
-Info: Reusing file C:/Users/myself/Code/FPGA/cyclone-fpga/cyclone_fpga/synthesis/submodules/altera_merlin_arbitrator.sv
+Info: Reusing file C:/Users/myself/Code/FPGA/Cyclone_FPGA/cyclone_fpga/synthesis/submodules/altera_merlin_arbitrator.sv
 Info: led_test_0_avalon_slave_0_rsp_width_adapter: "mm_interconnect_0" instantiated altera_merlin_width_adapter "led_test_0_avalon_slave_0_rsp_width_adapter"
-Info: Reusing file C:/Users/myself/Code/FPGA/cyclone-fpga/cyclone_fpga/synthesis/submodules/altera_merlin_address_alignment.sv
-Info: Reusing file C:/Users/myself/Code/FPGA/cyclone-fpga/cyclone_fpga/synthesis/submodules/altera_merlin_burst_uncompressor.sv
+Info: Reusing file C:/Users/myself/Code/FPGA/Cyclone_FPGA/cyclone_fpga/synthesis/submodules/altera_merlin_address_alignment.sv
+Info: Reusing file C:/Users/myself/Code/FPGA/Cyclone_FPGA/cyclone_fpga/synthesis/submodules/altera_merlin_burst_uncompressor.sv
 Info: avalon_st_adapter: "mm_interconnect_0" instantiated altera_avalon_st_adapter "avalon_st_adapter"
 Info: border: "hps_io" instantiated altera_interface_generator "border"
 Info: error_adapter_0: "avalon_st_adapter" instantiated error_adapter "error_adapter_0"
