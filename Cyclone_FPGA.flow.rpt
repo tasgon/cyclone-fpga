@@ -1,5 +1,5 @@
 Flow report for Cyclone_FPGA
-Mon Jun 12 22:26:29 2017
+Tue Jun 13 23:08:04 2017
 Quartus Prime Version 17.0.0 Build 595 04/25/2017 SJ Lite Edition
 
 
@@ -41,16 +41,16 @@ agreement for further details.
 +-------------------------------------------------------------------------------+
 ; Flow Summary                                                                  ;
 +---------------------------------+---------------------------------------------+
-; Flow Status                     ; Successful - Mon Jun 12 22:26:07 2017       ;
+; Flow Status                     ; Successful - Tue Jun 13 23:07:41 2017       ;
 ; Quartus Prime Version           ; 17.0.0 Build 595 04/25/2017 SJ Lite Edition ;
 ; Revision Name                   ; Cyclone_FPGA                                ;
 ; Top-level Entity Name           ; Baseline_CV_SoCKit                          ;
 ; Family                          ; Cyclone V                                   ;
 ; Device                          ; 5CSXFC6D6F31C6                              ;
 ; Timing Models                   ; Final                                       ;
-; Logic utilization (in ALMs)     ; 190 / 41,910 ( < 1 % )                      ;
-; Total registers                 ; 271                                         ;
-; Total pins                      ; 123 / 499 ( 25 % )                          ;
+; Logic utilization (in ALMs)     ; 192 / 41,910 ( < 1 % )                      ;
+; Total registers                 ; 275                                         ;
+; Total pins                      ; 127 / 499 ( 25 % )                          ;
 ; Total virtual pins              ; 0                                           ;
 ; Total block memory bits         ; 0 / 5,662,720 ( 0 % )                       ;
 ; Total DSP Blocks                ; 0 / 112 ( 0 % )                             ;
@@ -68,7 +68,7 @@ agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 06/12/2017 22:22:23 ;
+; Start date & time ; 06/13/2017 23:03:48 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; Cyclone_FPGA        ;
 +-------------------+---------------------+
@@ -79,7 +79,7 @@ agreement for further details.
 +---------------------------------------+----------------------------------------------------------------------------+---------------+----------------------------------+------------+
 ; Assignment Name                       ; Value                                                                      ; Default Value ; Entity Name                      ; Section Id ;
 +---------------------------------------+----------------------------------------------------------------------------+---------------+----------------------------------+------------+
-; COMPILER_SIGNATURE_ID                 ; 31366891980763.149732053906336                                             ; --            ; --                               ; --         ;
+; COMPILER_SIGNATURE_ID                 ; 31366891980763.149740942405404                                             ; --            ; --                               ; --         ;
 ; ECO_REGENERATE_REPORT                 ; On                                                                         ; Off           ; --                               ; --         ;
 ; HPS_ISW_FILE                          ; cyclone_fpga/synthesis/submodules/sequencer/alt_types.pre.h                ; --            ; cyclone_fpga_hps_0_hps_io_border ; --         ;
 ; HPS_ISW_FILE                          ; cyclone_fpga/synthesis/submodules/sequencer/emif.pre.xml                   ; --            ; cyclone_fpga_hps_0_hps_io_border ; --         ;
@@ -134,11 +134,11 @@ agreement for further details.
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name               ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis      ; 00:00:17     ; 1.0                     ; 834 MB              ; 00:00:26                           ;
-; Fitter                    ; 00:00:55     ; 1.0                     ; 3211 MB             ; 00:01:27                           ;
+; Analysis & Synthesis      ; 00:00:18     ; 1.0                     ; 829 MB              ; 00:00:27                           ;
+; Fitter                    ; 00:01:01     ; 1.0                     ; 3206 MB             ; 00:01:34                           ;
 ; Assembler                 ; 00:00:09     ; 1.0                     ; 749 MB              ; 00:00:09                           ;
-; TimeQuest Timing Analyzer ; 00:00:21     ; 1.0                     ; 1422 MB             ; 00:00:21                           ;
-; Total                     ; 00:01:42     ; --                      ; --                  ; 00:02:23                           ;
+; TimeQuest Timing Analyzer ; 00:00:22     ; 1.0                     ; 1418 MB             ; 00:00:22                           ;
+; Total                     ; 00:01:50     ; --                      ; --                  ; 00:02:32                           ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 

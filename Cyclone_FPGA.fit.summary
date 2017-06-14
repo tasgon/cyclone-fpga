@@ -1,13 +1,13 @@
-Fitter Status : Successful - Mon Jun 12 22:25:56 2017
+Fitter Status : Successful - Tue Jun 13 23:07:30 2017
 Quartus Prime Version : 17.0.0 Build 595 04/25/2017 SJ Lite Edition
 Revision Name : Cyclone_FPGA
 Top-level Entity Name : Baseline_CV_SoCKit
 Family : Cyclone V
 Device : 5CSXFC6D6F31C6
 Timing Models : Final
-Logic utilization (in ALMs) : 190 / 41,910 ( < 1 % )
-Total registers : 271
-Total pins : 123 / 499 ( 25 % )
+Logic utilization (in ALMs) : 192 / 41,910 ( < 1 % )
+Total registers : 275
+Total pins : 127 / 499 ( 25 % )
 Total virtual pins : 0
 Total block memory bits : 0 / 5,662,720 ( 0 % )
 Total RAM Blocks : 0 / 553 ( 0 % )

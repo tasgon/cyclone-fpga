@@ -1,5 +1,5 @@
 Analysis & Synthesis report for Cyclone_FPGA
-Mon Jun 12 22:25:00 2017
+Tue Jun 13 23:06:28 2017
 Quartus Prime Version 17.0.0 Build 595 04/25/2017 SJ Lite Edition
 
 
@@ -210,14 +210,14 @@ agreement for further details.
 +-------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                  ;
 +---------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Mon Jun 12 22:25:00 2017       ;
+; Analysis & Synthesis Status     ; Successful - Tue Jun 13 23:06:28 2017       ;
 ; Quartus Prime Version           ; 17.0.0 Build 595 04/25/2017 SJ Lite Edition ;
 ; Revision Name                   ; Cyclone_FPGA                                ;
 ; Top-level Entity Name           ; Baseline_CV_SoCKit                          ;
 ; Family                          ; Cyclone V                                   ;
 ; Logic utilization (in ALMs)     ; N/A                                         ;
 ; Total registers                 ; 264                                         ;
-; Total pins                      ; 123                                         ;
+; Total pins                      ; 127                                         ;
 ; Total virtual pins              ; 0                                           ;
 ; Total block memory bits         ; 0                                           ;
 ; Total DSP Blocks                ; 0                                           ;
@@ -407,7 +407,7 @@ agreement for further details.
 ;                                             ;                  ;
 ; Dedicated logic registers                   ; 184              ;
 ;                                             ;                  ;
-; I/O pins                                    ; 123              ;
+; I/O pins                                    ; 127              ;
 ; I/O registers                               ; 80               ;
 ;                                             ;                  ;
 ; Total DSP Blocks                            ; 0                ;
@@ -415,8 +415,8 @@ agreement for further details.
 ; Total DLLs                                  ; 1                ;
 ; Maximum fan-out node                        ; OSC_50_B8A~input ;
 ; Maximum fan-out                             ; 176              ;
-; Total fan-out                               ; 2777             ;
-; Average fan-out                             ; 2.55             ;
+; Total fan-out                               ; 2781             ;
+; Average fan-out                             ; 2.53             ;
 +---------------------------------------------+------------------+
 
 
@@ -425,7 +425,7 @@ agreement for further details.
 +-----------------------------------------------------------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------------------------------------------------+--------------+
 ; Compilation Hierarchy Node                                                                    ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                                                                                                                                                                                                                                                                                                                ; Entity Name                                       ; Library Name ;
 +-----------------------------------------------------------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------------------------------------------------+--------------+
-; |Baseline_CV_SoCKit                                                                           ; 319 (0)             ; 184 (0)                   ; 0                 ; 0          ; 123  ; 0            ; |Baseline_CV_SoCKit                                                                                                                                                                                                                                                                                                                                                                ; Baseline_CV_SoCKit                                ; work         ;
+; |Baseline_CV_SoCKit                                                                           ; 319 (0)             ; 184 (0)                   ; 0                 ; 0          ; 127  ; 0            ; |Baseline_CV_SoCKit                                                                                                                                                                                                                                                                                                                                                                ; Baseline_CV_SoCKit                                ; work         ;
 ;    |cyclone_fpga:bridge|                                                                      ; 319 (0)             ; 184 (0)                   ; 0                 ; 0          ; 0    ; 0            ; |Baseline_CV_SoCKit|cyclone_fpga:bridge                                                                                                                                                                                                                                                                                                                                            ; cyclone_fpga                                      ; cyclone_fpga ;
 ;       |altera_reset_controller:rst_controller_001|                                            ; 0 (0)               ; 3 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Baseline_CV_SoCKit|cyclone_fpga:bridge|altera_reset_controller:rst_controller_001                                                                                                                                                                                                                                                                                                 ; altera_reset_controller                           ; cyclone_fpga ;
 ;          |altera_reset_synchronizer:alt_rst_sync_uq1|                                         ; 0 (0)               ; 3 (3)                     ; 0                 ; 0          ; 0    ; 0            ; |Baseline_CV_SoCKit|cyclone_fpga:bridge|altera_reset_controller:rst_controller_001|altera_reset_synchronizer:alt_rst_sync_uq1                                                                                                                                                                                                                                                      ; altera_reset_synchronizer                         ; cyclone_fpga ;
@@ -4030,7 +4030,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 ;         4 data inputs                                  ; 1     ;
 ; blackbox                                               ; 1     ;
 ;                 yclone_fpga_hps_0_hps_io_border:border ; 1     ;
-; boundary_port                                          ; 123   ;
+; boundary_port                                          ; 127   ;
 ;                                                        ;       ;
 ; Max LUT depth                                          ; 5.50  ;
 ; Average LUT depth                                      ; 2.50  ;
@@ -4093,7 +4093,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 17.0.0 Build 595 04/25/2017 SJ Lite Edition
-    Info: Processing started: Mon Jun 12 22:22:17 2017
+    Info: Processing started: Tue Jun 13 23:03:42 2017
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Cyclone_FPGA -c Cyclone_FPGA
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
@@ -4216,7 +4216,7 @@ Warning (10236): Verilog HDL Implicit Net warning at hps_sdram_pll.sv(168): crea
 Warning (12125): Using design file baseline_cv_sockit.v, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
     Info (12023): Found entity 1: Baseline_CV_SoCKit File: C:/Users/myself/Code/FPGA/Cyclone_FPGA/baseline_cv_sockit.v Line: 5
 Info (12127): Elaborating entity "Baseline_CV_SoCKit" for the top level hierarchy
-Info (12128): Elaborating entity "cyclone_fpga" for hierarchy "cyclone_fpga:bridge" File: C:/Users/myself/Code/FPGA/Cyclone_FPGA/baseline_cv_sockit.v Line: 60
+Info (12128): Elaborating entity "cyclone_fpga" for hierarchy "cyclone_fpga:bridge" File: C:/Users/myself/Code/FPGA/Cyclone_FPGA/baseline_cv_sockit.v Line: 63
 Info (12128): Elaborating entity "cyclone_fpga_hps_0" for hierarchy "cyclone_fpga:bridge|cyclone_fpga_hps_0:hps_0" File: C:/Users/myself/Code/FPGA/Cyclone_FPGA/cyclone_fpga/synthesis/cyclone_fpga.v Line: 128
 Info (12128): Elaborating entity "cyclone_fpga_hps_0_fpga_interfaces" for hierarchy "cyclone_fpga:bridge|cyclone_fpga_hps_0:hps_0|cyclone_fpga_hps_0_fpga_interfaces:fpga_interfaces" File: C:/Users/myself/Code/FPGA/Cyclone_FPGA/cyclone_fpga/synthesis/submodules/cyclone_fpga_hps_0.v Line: 134
 Info (12128): Elaborating entity "cyclone_fpga_hps_0_hps_io" for hierarchy "cyclone_fpga:bridge|cyclone_fpga_hps_0:hps_0|cyclone_fpga_hps_0_hps_io:hps_io" File: C:/Users/myself/Code/FPGA/Cyclone_FPGA/cyclone_fpga/synthesis/submodules/cyclone_fpga_hps_0.v Line: 153
@@ -4411,17 +4411,22 @@ Info (286031): Timing-Driven Synthesis is running on partition "cyclone_fpga_hps
 Info (144001): Generated suppressed messages file C:/Users/myself/Code/FPGA/Cyclone_FPGA/Cyclone_FPGA.map.smsg
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 10 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 813 device resources after synthesis - the final resource count might be different
-    Info (21058): Implemented 3 input pins
+Warning (21074): Design contains 4 input pin(s) that do not drive logic
+    Warning (15610): No output dependent on input pin "RESET_n" File: C:/Users/myself/Code/FPGA/Cyclone_FPGA/baseline_cv_sockit.v Line: 32
+    Warning (15610): No output dependent on input pin "KEY[0]" File: C:/Users/myself/Code/FPGA/Cyclone_FPGA/baseline_cv_sockit.v Line: 39
+    Warning (15610): No output dependent on input pin "KEY[1]" File: C:/Users/myself/Code/FPGA/Cyclone_FPGA/baseline_cv_sockit.v Line: 39
+    Warning (15610): No output dependent on input pin "KEY[2]" File: C:/Users/myself/Code/FPGA/Cyclone_FPGA/baseline_cv_sockit.v Line: 39
+Info (21057): Implemented 817 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 7 input pins
     Info (21059): Implemented 36 output pins
     Info (21060): Implemented 84 bidirectional pins
     Info (21061): Implemented 431 logic cells
     Info (21066): Implemented 1 delay-locked loops
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 119 warnings
-    Info: Peak virtual memory: 834 megabytes
-    Info: Processing ended: Mon Jun 12 22:25:00 2017
-    Info: Elapsed time: 00:02:43
-    Info: Total CPU time (on all processors): 00:02:52
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 124 warnings
+    Info: Peak virtual memory: 831 megabytes
+    Info: Processing ended: Tue Jun 13 23:06:28 2017
+    Info: Elapsed time: 00:02:46
+    Info: Total CPU time (on all processors): 00:02:54
 
 
 +------------------------------------------+

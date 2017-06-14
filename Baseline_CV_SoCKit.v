@@ -32,7 +32,10 @@ module Baseline_CV_SoCKit(
    input              RESET_n,
 	
 	//LED
-	output reg [3:0] LED
+	output reg [3:0] LED,
+	
+	//keys
+	input [3:0] KEY
 );
 
 cyclone_fpga bridge (
@@ -56,7 +59,7 @@ cyclone_fpga bridge (
    .memory_mem_dm       (hps_memory_mem_dm),
    .memory_oct_rzqin    (hps_memory_oct_rzqin),
 	 
-	.reset_reset_n(RESET_n)
+	.reset_reset_n(KEY[3])
 );
 
 endmodule
